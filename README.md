@@ -1,18 +1,32 @@
-# Aprudkin Tap
+# aprudkin Homebrew tap
 
-## How do I install these formulae?
+Homebrew formulae maintained by Alexey Prudkin.
 
-`brew install aprudkin/tap/<formula>`
+## Install sshai
 
-Or `brew tap aprudkin/tap` and then `brew install <formula>`.
+Install [`sshai`](https://github.com/aprudkin/sshai) and its bundled Agent Skills-compatible skill:
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "aprudkin/tap"
-brew "<formula>"
+```bash
+brew install aprudkin/tap/sshai
 ```
 
-## Documentation
+The formula installs the skill under the package share directory. Pi users can enable it explicitly:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+pi install "$(brew --prefix sshai)/share/sshai"
+```
+
+Other compatible agent harnesses can load `skills/sshai/SKILL.md` from the directory reported by
+`brew --prefix sshai`.
+
+## Update
+
+```bash
+brew update
+brew upgrade sshai
+```
+
+## Contributing
+
+Report formula issues in the
+[`aprudkin/homebrew-tap` issue tracker](https://github.com/aprudkin/homebrew-tap/issues).
