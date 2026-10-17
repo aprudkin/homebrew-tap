@@ -1,8 +1,8 @@
 class Sshai < Formula
   desc "Run non-interactive SSH commands with bounded local evidence"
   homepage "https://github.com/aprudkin/sshai"
-  url "https://github.com/aprudkin/sshai/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "ac188e710b65e3c2d944885e9eb2346f048f462855642c6dc8f9b2ace437a6df"
+  url "https://github.com/aprudkin/sshai/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "aa3ca4f5daf0316384fad356d77b948fe6975db2a77e77abdd725c7c2e5038c4"
   license "MIT"
 
   depends_on "go" => :build
